@@ -1,0 +1,148 @@
+.section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.highlight {
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--accent-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projectCard {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.projectCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    var(--accent-secondary)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectCard:hover {
+  border-color: rgba(87, 155, 234, 0.3);
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(87, 155, 234, 0.1);
+}
+
+.projectCard:hover::before {
+  opacity: 1;
+}
+
+.projectIcon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  display: flex;
+  width: fit-content;
+}
+
+.projectTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.projectDescription {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex-grow: 1;
+  font-size: 0.95rem;
+}
+
+.projectCategory {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.8;
+}
+
+.projectLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  width: fit-content;
+}
+
+.projectLink:hover {
+  color: var(--text-primary);
+  gap: 0.75rem;
+}

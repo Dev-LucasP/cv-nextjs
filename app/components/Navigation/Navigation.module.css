@@ -1,0 +1,150 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 50;
+  background: rgba(28, 28, 30, 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .navContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+.logo {
+  color: var(--text-primary);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.logo span {
+  color: var(--accent-color);
+  text-shadow: 0 0 20px rgba(87, 155, 234, 0.5);
+}
+
+.desktopLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .desktopLinks {
+    display: none;
+  }
+}
+
+.navLink {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+  letter-spacing: 0.05em;
+}
+
+.navLink:hover {
+  color: var(--accent-color);
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    var(--accent-secondary)
+  );
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.menuButton {
+  display: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menuButton:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: rgba(15, 15, 15, 0.98);
+  backdrop-filter: blur(20px);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobileMenu.open {
+  max-height: 300px;
+}
+
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  gap: 1.5rem;
+}
+
+.mobileLink {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mobileLink:hover {
+  color: var(--accent-color);
+  padding-left: 1rem;
+}

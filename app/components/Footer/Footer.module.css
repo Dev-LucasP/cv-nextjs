@@ -1,0 +1,32 @@
+.footer {
+  padding: 2rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(15, 15, 15, 0.5);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.link {
+  color: var(--accent-color);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: var(--text-primary);
+}

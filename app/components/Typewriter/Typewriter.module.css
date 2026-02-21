@@ -1,0 +1,41 @@
+.typewriter {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-family: monospace;
+}
+
+@media (max-width: 768px) {
+  .typewriter {
+    font-size: 1.1rem;
+  }
+}
+
+.highlight {
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--accent-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: var(--accent-color);
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}

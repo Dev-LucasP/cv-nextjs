@@ -1,0 +1,154 @@
+.section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.highlight {
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--accent-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    var(--accent-color),
+    var(--accent-secondary),
+    transparent
+  );
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 2rem;
+  }
+}
+
+.experienceCard {
+  position: relative;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.experienceCard::before {
+  content: "";
+  position: absolute;
+  left: -2.75rem;
+  top: 2rem;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--accent-secondary)
+  );
+  border-radius: 50%;
+  border: 3px solid var(--bg-primary);
+  box-shadow: 0 0 20px rgba(87, 155, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+  .experienceCard::before {
+    left: -2.25rem;
+  }
+}
+
+.experienceCard:hover {
+  border-color: rgba(87, 155, 234, 0.3);
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.role {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.period {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.descriptionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.descriptionItem {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.descriptionItem::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 1.2em;
+}
