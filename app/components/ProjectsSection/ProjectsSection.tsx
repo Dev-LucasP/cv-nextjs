@@ -53,36 +53,12 @@ const projects: Project[] = [
     link: "https://github.com/Dev-LucasP/Gestionnaire-De-Recettes",
   },
   {
-    icon: Icons.Gamepad,
-    title: "Application de jeux de société",
-    description:
-      "Application pour gérer et organiser des soirées jeux de société. Suivi des parties et statistiques des joueurs.",
-    category: "DIVERS",
-    link: "https://github.com/Dev-LucasP/Boardgame-App",
-  },
-  {
     icon: Icons.Code,
     title: "LensJudge Net",
     description:
       "Version web de LensJudge. Plateforme en ligne pour les compétitions de programmation avec interface moderne.",
     category: "DÉVELOPPEMENT WEB",
     link: "https://github.com/Dev-LucasP/LensJudge-Net",
-  },
-  {
-    icon: Icons.Laptop,
-    title: "Marathon Web",
-    description:
-      "Application développée lors d'un marathon de programmation. Projet réalisé en temps limité avec une équipe.",
-    category: "APPLICATIONS DESKTOP",
-    link: "https://github.com/Dev-LucasP/Marathon-Web",
-  },
-  {
-    icon: Icons.Gamepad,
-    title: "Bomberman",
-    description:
-      "Recréation du jeu classique Bomberman. Implémentation complète du gameplay avec multijoueur local.",
-    category: "JEU",
-    link: "https://github.com/Dev-LucasP/Bomberman",
   },
 ];
 
