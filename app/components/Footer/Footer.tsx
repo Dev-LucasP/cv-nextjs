@@ -7,7 +7,7 @@ export default function Footer() {
         <span className={styles.text}>
           Créé par{" "}
           <a
-            href="https://github.com/lukeperez"
+            href="https://github.com/Dev-LucasP"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}

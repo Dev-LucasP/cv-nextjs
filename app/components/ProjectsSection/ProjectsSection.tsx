@@ -13,51 +13,50 @@ interface Project {
 
 const projects: Project[] = [
   {
-    icon: Icons.Laptop,
+    icon: Icons.Code,
     title: "LensJudge",
     description:
-      "Application desktop de gestion de compétitions de programmation. Interface complète pour organiser et suivre les concours.",
-    category: "APPLICATION DESKTOP",
+      "Code Java pour un système de jugement de compétitions de programmation. Permet l'exécution et l'évaluation de solutions soumises par les participants.",
+    category: "DÉVELOPPEMENT",
     link: "https://github.com/Dev-LucasP/LENSJudge",
   },
   {
     icon: Icons.Code,
     title: "Pokédex",
     description:
-      "Application web interactive du Pokédex. Recherche et consultation des informations sur les Pokémon avec une interface moderne.",
-    category: "DÉVELOPPEMENT WEB",
+      "Application Python interactive du Pokédex. Recherche et consultation des informations sur les Pokémon avec une interface moderne.",
+    category: "DÉVELOPPEMENT",
     link: "https://github.com/Dev-LucasP/Pokedex",
   },
   {
-    icon: Icons.Laptop,
+    icon: Icons.Code,
     title: "Site Événementiel",
-    description:
-      "Site web dédié à la gestion d'événements. Permet la création, la planification et la gestion d'événements variés.",
-    category: "APPLICATIONS DESKTOP",
+    description: "Site web pour un événements.",
+    category: "DÉVELOPPEMENT WEB",
     link: "https://github.com/Dev-LucasP/Site-Evenementiel",
   },
   {
     icon: Icons.Gamepad,
     title: "Démineur",
     description:
-      "Implémentation web du jeu classique du démineur. Interface intuitive et responsive pour une expérience de jeu optimale.",
-    category: "DÉVELOPPEMENT WEB",
+      "Implémentation en javafx du jeu du démineur. Interface intuitive pour une expérience de jeu optimale.",
+    category: "APPLICATION DESKTOP",
     link: "https://github.com/Dev-LucasP/Demineur",
   },
   {
     icon: Icons.Code,
     title: "Gestionnaire de recettes",
     description:
-      "API REST pour la gestion de recettes de cuisine. Permet la création, modification et partage de recettes culinaires.",
-    category: "API",
+      "Server PHP utilisant Laravel pour la gestion de recettes de cuisine. Permet la création, modification et partage de recettes culinaires.",
+    category: "DÉVELOPPEMENT WEB",
     link: "https://github.com/Dev-LucasP/Gestionnaire-De-Recettes",
   },
   {
-    icon: Icons.Code,
+    icon: Icons.Laptop,
     title: "LensJudge Net",
     description:
-      "Version web de LensJudge. Plateforme en ligne pour les compétitions de programmation avec interface moderne.",
-    category: "DÉVELOPPEMENT WEB",
+      "Setup server de LensJudge. Plateforme en ligne pour les compétitions de programmation avec interface moderne.",
+    category: "AUTRES",
     link: "https://github.com/Dev-LucasP/LensJudge-Net",
   },
 ];
